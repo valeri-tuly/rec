@@ -1196,14 +1196,14 @@ ol {
 .portfolio__filter li {
   list-style: none;
   font-size: 16px;
-  color: #adadad;
+  color: #F7F2EC;
   margin-right: 5px;
   display: inline-block;
   cursor: pointer;
   padding: 6px 22px;
 }
 .portfolio__filter li.active {
-  border: 1px solid #00bfe7;
+  border: 1px solid #E29E1F;
 }
 .portfolio__filter li:last-child {
   margin-right: 0;
@@ -1231,7 +1231,7 @@ ol {
 }
 .portfolio__item__video .play-btn {
   display: inline-block;
-  color: #ffffff;
+  color: #F7F2EC;
   font-size: 20px;
   height: 50px;
   width: 50px;
@@ -1245,7 +1245,7 @@ ol {
   text-align: center;
 }
 .portfolio__item__text h4 {
-  color: #ffffff;
+  color: #F7F2EC;
   display: inline-block;
   font-size: 22px;
   font-weight: 700;
@@ -1272,7 +1272,7 @@ ol {
   font-weight: 300;
   margin-right: 24px;
   position: relative;
-  color: #adadad;
+  color: #F7F2EC;
 }
 .portfolio__item__text ul li:after {
   position: absolute;
@@ -1289,7 +1289,7 @@ ol {
 .portfolio__item__text span {
   font-size: 16px;
   font-weight: 300;
-  color: #adadad;
+  color: #F7F2EC;
   display: block;
 }
 
@@ -1302,7 +1302,7 @@ ol {
 }
 .pagination__option .arrow__pagination {
   font-size: 15px;
-  color: #ffffff;
+  color: #F7F2EC;
   display: inline-block;
   text-transform: uppercase;
 }
@@ -1317,7 +1317,7 @@ ol {
 }
 .pagination__option .number__pagination {
   font-size: 18px;
-  color: #ffffff;
+  color: #F7F2EC;
   height: 50px;
   width: 50px;
   background: rgba(242, 242, 242, 0.1);
@@ -1635,7 +1635,7 @@ ol {
   resize: none;
 }
 .blog__details__comment form textarea:placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 
 .input__list {
@@ -1649,14 +1649,14 @@ ol {
   border: 1px solid rgba(225, 225, 225, 0.5);
   background: transparent;
   font-size: 16px;
-  color: #adadad;
+  color: #F7F2EC;
   padding-left: 20px;
   font-weight: 300;
   margin-right: 20px;
   margin-bottom: 20px;
 }
 .input__list input:placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 
 /*---------------------
@@ -1683,7 +1683,7 @@ ol {
 }
 .contact__widget__item__icon i {
   font-size: 30px;
-  color: #ffffff;
+  color: #F7F2EC;
 }
 
 .contact__widget__item__text {
@@ -1692,7 +1692,7 @@ ol {
 }
 .contact__widget__item__text h4 {
   font-size: 22px;
-  color: #ffffff;
+  color: #F7F2EC;
   font-weight: 700;
   margin-bottom: 10px;
 }
@@ -1717,7 +1717,7 @@ ol {
 }
 
 .contact__form h3 {
-  color: #ffffff;
+  color: #F7F2EC;
   font-weight: 700;
   text-transform: uppercase;
   margin-bottom: 35px;
@@ -1728,7 +1728,7 @@ ol {
   border: 1px solid rgba(225, 225, 225, 0.5);
   background: transparent;
   font-size: 16px;
-  color: #adadad;
+  color: #F7F2EC;
   padding-left: 20px;
   font-weight: 300;
   margin-right: 20px;
@@ -1738,7 +1738,7 @@ ol {
   transition: all, 0.3s;
 }
 .contact__form form input:placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 .contact__form form input:focus {
   border-color: #e1e1e1;
@@ -1749,7 +1749,7 @@ ol {
   border: 1px solid rgba(225, 225, 225, 0.5);
   background: transparent;
   font-size: 16px;
-  color: #adadad;
+  color: #F7F2EC;
   padding-top: 12px;
   padding-left: 20px;
   font-weight: 300;
@@ -1760,7 +1760,7 @@ ol {
   transition: all, 0.3s;
 }
 .contact__form form textarea:placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 .contact__form form textarea:focus {
   border-color: #e1e1e1;
