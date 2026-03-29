@@ -1142,6 +1142,7 @@ ol {
   -o-transition: all, 0.5s;
   transition: all, 0.5s;
 }
+/*---------------------
 
 .services .primary-btn {
   background: #E29E1F;
@@ -1156,6 +1157,7 @@ ol {
   box-shadow: 0.1em 0.1em;
 
 }
+-----------------------*/
 
 /*---------------------
   Services Page
