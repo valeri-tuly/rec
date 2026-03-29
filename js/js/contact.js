@@ -2,7 +2,7 @@
 (function(){
   emailjs.init("MeG_AUJX35hyw0i2i");
 })();
-
+console.log("JS подключен");
 // Обработка формы
 document.addEventListener("DOMContentLoaded", function () {
     const form = document.querySelector("#contact-form");
