@@ -198,13 +198,13 @@
             <div class="col-lg-6 col-md-6">
                 <div class="contact__form">
                     <h3>Ota yhteyttä</h3>
-                    <form action="#">
-                        <input type="text" placeholder="Nimesi">
-                        <input type="text" placeholder="Sähköposti">
-                        <input type="text" placeholder="Yritys / Verkkosivusto">
-                        <textarea placeholder="Viesti"></textarea>
-                        <button type="submit" class="site-btn">Lähetä viesti</button>
-                    </form>
+                        <form id="contact-form">
+                            <input type="text" name="name" placeholder="Nimesi" required>
+                            <input type="email" name="email" placeholder="Sähköposti" required>
+                            <input type="text" name="company" placeholder="Yritys / Verkkosivusto">
+                            <textarea name="message" placeholder="Viesti" required></textarea>
+                            <button type="submit" class="site-btn">Lähetä viesti</button>
+                        </form>
                 </div>
             </div>
         </div>
@@ -309,6 +309,11 @@
     <script src="js/masonry.pkgd.min.js"></script>
     <script src="js/jquery.slicknav.js"></script>
     <script src="js/main.js"></script>
+    <!-- EmailJS -->
+<script src="https://cdn.jsdelivr.net/npm/emailjs-com@3/dist/email.min.js"></script>
+
+<!-- ТВОЙ ФАЙЛ -->
+<script src="js/contact.js"></script>
 </body>
 
 </html>
