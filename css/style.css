@@ -879,7 +879,7 @@ ol {
 }
 .footer__option__item .read__more span {
   font-size: 16px;
-  color: #F1F7EE;
+  color: #F7F2EC;
   opacity: 0.5;
   position: relative;
   top: 4px;
@@ -889,7 +889,7 @@ ol {
   list-style: none;
 }
 .footer__option__item ul li a {
-  color: #adadad;
+  color: #F7F2EC;
   font-size: 16px;
   font-weight: 300;
   line-height: 32px;
@@ -907,19 +907,19 @@ ol {
   color: #adadad;
 }
 .footer__option__item form input::-webkit-input-placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 .footer__option__item form input::-moz-placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 .footer__option__item form input:-ms-input-placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 .footer__option__item form input::-ms-input-placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 .footer__option__item form input::placeholder {
-  color: #adadad;
+  color: #F7F2EC;
 }
 .footer__option__item form button {
   font-size: 20px;
