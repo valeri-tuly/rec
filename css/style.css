@@ -1766,47 +1766,6 @@ ol {
   border-color: #344EAD;
 }
 
-/* Общие стили для гамбургера как primary button */
-.slicknav_btn {
-    display: inline-flex !important;
-    align-items: center;
-    justify-content: center;
-
-    width: 220px;
-    height: 60px;
-    background: #BB0102 !important; /* Цвет primary button */
-    color: #F1F7EE !important;
-    font-family: inherit;
-    font-weight: 900;
-    font-size: 18px;
-    border: 3px solid #091F5B;
-    border-radius: 0.4em;
-    box-shadow: 0.1em 0.1em;
-    text-transform: uppercase;
-    letter-spacing: 2px;
-    cursor: pointer;
-    text-align: center;
-    white-space: nowrap;
-    transition: all 0.2s ease;
-}
-
-.slicknav_icon {
-    background: #F1F7EE !important;
-    width: 30px;
-    height: 3px;
-    margin-left: 10px;
-}
-
-.slicknav_btn:hover {
-    transform: translate(-0.05em, -0.05em);
-    box-shadow: 0.15em 0.15em;
-}
-
-.slicknav_btn:active {
-    transform: translate(0.05em, 0.05em);
-    box-shadow: 0.05em 0.05em;
-}
-
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
   .container {
@@ -1922,6 +1881,47 @@ ol {
     padding: 6px 15px;
   }
 
+  .slicknav_menu {
+    background: transparent;
+    padding: 0;
+    display: block;
+  }
+
+  .slicknav_nav ul {
+    margin: 0;
+    padding: 10px 30px;
+  }
+
+  .slicknav_nav .slicknav_row,
+.slicknav_nav a {
+    padding: 7px 0;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .slicknav_nav .slicknav_row:hover {
+    border-radius: 0;
+    background: transparent;
+    color: #111111;
+  }
+
+  .slicknav_nav a:hover {
+    border-radius: 0;
+    background: transparent;
+    color: #111111;
+  }
+
+  .slicknav_nav {
+    background: #222222;
+  }
+
+  .slicknav_btn {
+    position: absolute;
+    right: 10px;
+    top: 26px;
+    background: #00bfe7;
+  }
 
   .header .container {
     position: relative;
@@ -2003,7 +2003,47 @@ ol {
     padding: 0 15px;
   }
 
- 
+  .slicknav_menu {
+    background: transparent;
+    padding: 0;
+    display: block;
+  }
+
+  .slicknav_nav ul {
+    margin: 0;
+    padding: 10px 30px;
+  }
+
+  .slicknav_nav .slicknav_row,
+.slicknav_nav a {
+    padding: 7px 0;
+    margin: 0;
+    color: #ffffff;
+    font-weight: 600;
+  }
+
+  .slicknav_nav .slicknav_row:hover {
+    border-radius: 0;
+    background: transparent;
+    color: #111111;
+  }
+
+  .slicknav_nav a:hover {
+    border-radius: 0;
+    background: transparent;
+    color: #111111;
+  }
+
+  .slicknav_nav {
+    background: #222222;
+  }
+
+  .slicknav_btn {
+    position: absolute;
+    right: 10px;
+    top: 26px;
+    background: #00bfe7;
+  }
 
   .header .container {
     position: relative;
@@ -2127,24 +2167,4 @@ ol {
   width: 100%;
   height: 100%;
   border: 0;
-}
-
-/* Позиция гамбургера для разных экранов */
-
-/* Tablet Device = 768px */
-@media only screen and (min-width: 768px) and (max-width: 991px) {
-    .slicknav_btn {
-        position: absolute;
-        right: 10px;
-        top: 26px;
-    }
-}
-
-/* Wide Mobile = 480px */
-@media only screen and (max-width: 767px) {
-    .slicknav_btn {
-        position: absolute;
-        right: 10px;
-        top: 26px;
-    }
 }
