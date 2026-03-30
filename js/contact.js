@@ -28,17 +28,3 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
-// Newsletter subscription
-document.querySelector("#newsletter-form").addEventListener("submit", function(e) {
-    e.preventDefault();
-
-    emailjs.send("service_b3lr60p", "template_newsletter", {
-        email: this.email.value
-    }).then(() => {
-        alert("Kiitos! Olet tilannut uutiskirjeen ❤️");
-        this.reset();
-    }, (error) => {
-        alert("Virhe! Yritä uudelleen 😢");
-        console.log(error);
-    });
-});
