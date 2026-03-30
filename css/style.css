@@ -1817,33 +1817,7 @@ ol {
     background-color: #091F5B !important; /* фон выпадающего списка */
 }
 
-#nav-overlay {
-  position: fixed;
-  top: 50%;
-  left: 50%;
-  background: #000;
-  border-radius: 50%;
-  transform: scale(0);
-  transition: transform 0.6s ease;
-  z-index: 9998;
-}
 
-#nav-overlay.open {
-  transform: scale(1);
-}
-
-#nav-fullscreen {
-  position: fixed;
-  top:0; left:0; width:100%;
-  background: rgba(0,0,0,0.9);
-  opacity: 0;
-  transition: opacity 0.6s ease;
-  z-index: 9999;
-}
-
-#nav-fullscreen.open {
-  opacity: 1;
-}
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
