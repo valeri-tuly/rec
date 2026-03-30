@@ -270,23 +270,22 @@
 <!-- Call To Action Section End -->
 
     <!-- Footer Section Begin -->
-<footer class="footer">
+<footer class="footer set-bg" data-setbg="img/hero/hero-3.webp">
     <div class="container">
         <!-- Top Footer: Logo + Social -->
         <div class="footer__top">
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="footer__top__logo">
-                        <a href="#"><img src="img/logo.png" alt="Rec Studio Logo"></a>
+                        <a href="index.hyml"><img src="img/logo-footer.webp" alt="Rec Studio Logo"></a>
                     </div>
                 </div>
                 <div class="col-lg-6 col-md-6">
                     <div class="footer__top__social">
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-instagram"></i></a>
-                        <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        <a href="#"><i class="fa fa-linkedin"></i></a>
-                        <a href="#"><i class="fa fa-tiktok"></i></a>
+                        <a href="https://www.facebook.com/recstudio.fi" target="_blank" ><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.linkedin.com/company/rec-studio-fi" target="_blank" ><i class="fa fa-linkedin"></i></a>
+                        <a href="https://recstudio.fi/" target="_blank" ><i class="fa fa-instagram"></i></a>
+                        <a href="https://www.youtube.com/@rec_studio_fi" target="_blank" ><i class="fa fa-youtube-play"></i></a>
                     </div>
                 </div>
             </div>
@@ -298,10 +297,10 @@
                 <!-- About -->
                 <div class="col-lg-4 col-md-6 col-sm-6">
                     <div class="footer__option__item">
-                        <h5>Rec Studio</h5>
+                        <h4>Rec Studio</h4>
                         <p>Tarjoamme lyhytvideotuotantoa, somevideoita ja mainosmateriaaleja pienille yrityksille Suomessa. 
                         Autamme brändiäsi erottumaan ja kasvattamaan näkyvyyttä digitaalisessa maailmassa.</p>
-                        <a href="#about" class="read__more">Lue lisää <span class="arrow_right"></span></a>
+                        <a href="services.html" class="read__more">Lue lisää <span class="arrow_right"></span></a>
                     </div>
                 </div>
 
@@ -310,10 +309,10 @@
                     <div class="footer__option__item">
                         <h5>Yritys</h5>
                         <ul>
-                            <li><a href="#team">Tiimi</a></li>
-                            <li><a href="#services">Palvelut</a></li>
-                            <li><a href="#contact">Ota yhteyttä</a></li>
-                            <li><a href="#locations">Sijainnit</a></li>
+                            <li><a href="about.html">Tiimi</a></li>
+                            <li><a href="services.html">Palvelut</a></li>
+                            <li><a href="contact.html">Ota yhteyttä</a></li>
+                            <li><a href="contact.html">Sijainnit</a></li>
                         </ul>
                     </div>
                 </div>
@@ -323,27 +322,25 @@
                     <div class="footer__option__item">
                         <h5>Työt</h5>
                         <ul>
-                            <li><a href="#portfolio">Portfolio</a></li>
-                            <li><a href="#videos">Videot</a></li>
-                            <li><a href="#ads">Mainokset</a></li>
-                            <li><a href="#social-content">Some-sisältö</a></li>
+                            <li><a href="portfolio.html">Portfolio</a></li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- Newsletter -->
-                <div class="col-lg-4 col-md-12">
-                    <div class="footer__option__item">
-                        <h5>Uutiskirje</h5>
-                        <p>Tilaa Rec Studion uutiskirje ja pysy ajan tasalla uusista projekteista ja vinkkejä videomarkkinointiin.</p>
-                        <form action="#">
-                            <input type="email" placeholder="Sähköposti">
-                            <button type="submit"><i class="fa fa-send"></i></button>
-                        </form>
-                    </div>
-                </div>
-            </div>
-        </div>
+<!-- Contact Form вместо Newsletter -->
+<div class="col-lg-4 col-md-12">
+    <div class="footer__option__item">
+        <h5>Ota yhteyttä</h5>
+        <p>Jätä sähköpostisi, niin otamme sinuun yhteyttä mahdollisimman pian.</p>
+
+        <form id="footer-contact-form">
+            <input type="email" name="email" placeholder="Sähköposti" required>
+            <button type="submit"><i class="fa fa-send"></i></button>
+        </form>
+    </div>
+</div>
+
+       <!-- Contact Form end -->        
 
         <!-- Copyright -->
         <div class="footer__copyright">
@@ -356,7 +353,8 @@
         </div>
     </div>
 </footer>
-    <!-- Footer Section End -->
+<!-- Footer Section End -->
+
 
     <!-- Js Plugins -->
     <script src="js/jquery-3.3.1.min.js"></script>
