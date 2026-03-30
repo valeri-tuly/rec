@@ -1741,7 +1741,7 @@ ol {
   color: #F7F2EC;
 }
 .contact__form form input:focus {
-  border-color: #e1e1e1;
+  border-color: #344EAD;
 }
 .contact__form form textarea {
   height: 110px;
@@ -1763,7 +1763,7 @@ ol {
   color: #F7F2EC;
 }
 .contact__form form textarea:focus {
-  border-color: #e1e1e1;
+  border-color: #344EAD;
 }
 
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
