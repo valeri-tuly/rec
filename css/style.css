@@ -1766,6 +1766,44 @@ ol {
   border-color: #344EAD;
 }
 
+/* Скрываем гамбургер на больших экранах */
+.nav-tgl {
+  display: none;
+}
+
+/* Горизонтальное меню по умолчанию */
+.nav ul {
+  display: flex;
+  gap: 20px;
+}
+
+/* Мобильный вариант */
+@media (max-width: 992px) { /* планшеты и меньше */
+  /* Показываем кнопку гамбургера */
+  .nav-tgl {
+    display: inline-block;
+  }
+
+  /* Меню изначально скрыто */
+  .nav ul {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    background: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0px 4px 24px rgba(0,0,0,0.24);
+    z-index: 101;
+  }
+
+  /* Когда меню открыто */
+  .menu.active .nav ul {
+    display: flex;
+  }
+}
+
 /*--------------------------------- Responsive Media Quaries -----------------------------*/
 @media only screen and (min-width: 1200px) {
   .container {
