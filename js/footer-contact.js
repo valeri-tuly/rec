@@ -6,11 +6,8 @@ document.addEventListener("DOMContentLoaded", function () {
     footerForm.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        emailjs.send("service_b3lr60p", "template_5qdozpm", {
-            name: "Footer user",
-            email: this.email.value,
-            message: "Contact request from footer",
-            company: "-"
+        emailjs.send("service_b3lr60p", "template_ke477j8", {
+            email: this.email.value
         }).then(() => {
 
             alert("Kiitos! Otamme sinuun yhteyttä 👍");
