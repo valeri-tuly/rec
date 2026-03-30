@@ -1,22 +1,24 @@
-import emailjs from 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js';
+// Инициализация EmailJS
+(function(){
+  emailjs.init("MeG_AUJX35hyw0i2i");
+})();
+// Обработка формы
+document.addEventListener("DOMContentLoaded", function () {
+    const form = document.querySelector("#footer-contact-form");
 
-emailjs.init('MeG_AUJX35hyw0i2i');
+    if (!form) return;
 
-document.addEventListener("DOMContentLoaded", () => {
-    const footerForm = document.querySelector("#footer-contact-form");
-    if (!footerForm) return;
-
-    footerForm.addEventListener("submit", function(e) {
+    form.addEventListener("submit", function (e) {
         e.preventDefault();
 
-        emailjs.send('service_b3lr60p', 'template_ke477j8', {
-            email: this.email.value
-        })
-        .then(() => {
-            alert("Kiitos! Otamme sinuun yhteyttä 👍");
+        emailjs.send("service_b3lr60p", "template_ke477j8", {
+            email: this.email.value,
+        }).then(() => {
+
+            alert("Kiitos! Viestisi on lähetetty ❤️");
             this.reset();
-        })
-        .catch((error) => {
+
+        }, (error) => {
             alert("Virhe! Yritä uudelleen 😢");
             console.log(error);
         });
