@@ -1766,33 +1766,70 @@ ol {
   border-color: #344EAD;
 }
 
-/* Убираем текст MENU */
-.slicknav_menu .slicknav_menutxt {
-  display: none;
+/* Убираем фон всего меню */
+.slicknav_menu {
+  background: transparent;
+  padding: 0;
 }
 
-/* Убираем фон, рамку и тени у кнопки */
+/* Кнопка (бургер) */
 .slicknav_btn {
   background: none;
   border: none;
   box-shadow: none;
-  text-shadow: none;
+  padding: 8px;
 }
 
-/* Убираем возможные лишние отступы */
-.slicknav_btn {
-  padding: 5px;
+/* Убираем текст MENU */
+.slicknav_menutxt {
+  display: none !important;
 }
 
-/* Цвет полосок */
-.slicknav_menu .slicknav_icon-bar {
+/* Бургер-линии */
+.slicknav_icon-bar {
   background-color: #091F5B;
-  box-shadow: none; /* убираем тень */
+  height: 2px;
+  width: 20px;
+  margin: 4px 0;
+  box-shadow: none;
 }
 
-/* Если есть псевдоэлемент — тоже чистим */
-.slicknav_menu .slicknav_icon:before {
+/* Само меню */
+.slicknav_nav {
+  background: white;
+  border-radius: 12px;
+  margin-top: 10px;
+  padding: 8px 0;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.08);
+}
+
+/* Пункты меню */
+.slicknav_nav a {
+  color: #091F5B;
+  padding: 12px 16px;
+  font-size: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+/* Hover / tap эффект (очень мягкий) */
+.slicknav_nav a:hover {
+  background: rgba(9,31,91,0.05);
+}
+
+/* Убираем все старые hover-эффекты */
+.slicknav_nav .slicknav_row:hover {
   background: none;
+}
+
+/* Подменю */
+.slicknav_nav ul {
+  margin-left: 10px;
+}
+
+/* Убираем синюю подсветку на мобиле */
+* {
+  -webkit-tap-highlight-color: transparent;
 }
 
 
