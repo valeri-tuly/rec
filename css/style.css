@@ -475,6 +475,12 @@ ol {
   margin-right: -10px;
 }
 
+.work .set-bg {
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 .work__item {
   height: 311px !important;
   width: calc(16.67% - 10px);
