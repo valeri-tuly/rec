@@ -18,7 +18,7 @@
         removeClasses: false,
         removeStyles: false,
         brand: '',
-        animations: 'circle', // наша кастомная анимация
+        animations: 'circle', // кастомная анимация
         init: function () {},
         beforeOpen: function () {},
         beforeClose: function () {},
@@ -49,15 +49,9 @@
         if (settings.duplicate) $this.mobileNav = menu.clone();
         else $this.mobileNav = menu;
 
-        if (settings.removeIds) {
-            $this.mobileNav.removeAttr('id').find('*').removeAttr('id');
-        }
-        if (settings.removeClasses) {
-            $this.mobileNav.removeAttr('class').find('*').removeAttr('class');
-        }
-        if (settings.removeStyles) {
-            $this.mobileNav.removeAttr('style').find('*').removeAttr('style');
-        }
+        if (settings.removeIds) $this.mobileNav.removeAttr('id').find('*').removeAttr('id');
+        if (settings.removeClasses) $this.mobileNav.removeAttr('class').find('*').removeAttr('class');
+        if (settings.removeStyles) $this.mobileNav.removeAttr('style').find('*').removeAttr('style');
 
         iconClass = prefix + '_icon';
         if (settings.label === '') iconClass += ' ' + prefix + '_no-text';
@@ -111,16 +105,15 @@
             item.children('a').attr('role','menuitem');
         });
 
-        // Скрываем элементы при инициализации
+        // Скрываем все подменю по умолчанию
         $(items).each(function() {
             var data = $(this).data('menu');
             if (!settings.showChildren){
-                $this._visibilityToggle(data.children, null, false, null, true);
+                this.classList.add(prefix+'_collapsed');
             }
         });
 
-        $this._visibilityToggle($this.mobileNav, null, false, 'init', true);
-
+        // outline
         $(document).mousedown(function(){ $this._outlines(false); });
         $(document).keyup(function(){ $this._outlines(true); });
 
@@ -131,13 +124,22 @@
     Plugin.prototype._menuToggle = function () {
         var $this = this;
         var btn = $this.btn;
-        var mobileNav = $this.mobileNav;
 
         if (btn.hasClass(prefix+'_collapsed')) btn.removeClass(prefix+'_collapsed').addClass(prefix+'_open');
         else btn.removeClass(prefix+'_open').addClass(prefix+'_collapsed');
         btn.addClass(prefix+'_animating');
 
-        $this._visibilityToggle(mobileNav, btn.parent(), true, btn);
+        // кастомная анимация кругом
+        if ($this.settings.animations === 'circle') {
+            var $overlay = $("#nav-overlay");
+            var $fullscreen = $("#nav-fullscreen");
+            var radius = Math.sqrt(Math.pow(window.innerHeight,2) + Math.pow(window.innerWidth,2));
+            var diameter = radius * 2;
+            $overlay.width(diameter).height(diameter).css({"margin-top": -radius,"margin-left": -radius});
+
+            $overlay.toggleClass("open");
+            $fullscreen.toggleClass("open");
+        }
     };
 
     Plugin.prototype._itemClick = function (el) {
@@ -164,23 +166,20 @@
             data.parent.addClass(prefix+'_collapsed').removeClass(prefix+'_open').addClass(prefix+'_animating');
         }
 
-        // Наш кастомный круг
+        // Круговая анимация при клике
         if ($this.settings.animations === 'circle') {
             var $overlay = $("#nav-overlay");
             var $fullscreen = $("#nav-fullscreen");
             var radius = Math.sqrt(Math.pow(window.innerHeight,2) + Math.pow(window.innerWidth,2));
             var diameter = radius * 2;
             $overlay.width(diameter).height(diameter).css({"margin-top": -radius,"margin-left": -radius});
+
             $overlay.toggleClass("open");
             $fullscreen.toggleClass("open");
         }
     };
 
-    Plugin.prototype._visibilityToggle = function(el, parent, animate, trigger, init) {
-        if (this.settings.animations !== 'circle') {
-            // Для совместимости оставляем пустой стандартный метод
-        }
-    };
+    Plugin.prototype._visibilityToggle = function(){};
 
     Plugin.prototype._outlines = function(state){
         if (!state) $('.'+prefix+'_item, .'+prefix+'_btn').css('outline','none');
