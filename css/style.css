@@ -506,7 +506,7 @@ ol {
 }
 .work__item .play-btn {
   display: inline-block;
-  color: #ffffff;
+  color: #F7F2EC;
   font-size: 20px;
   height: 50px;
   width: 50px;
@@ -533,11 +533,11 @@ ol {
 }
 .work__item__hover h4 {
   font-size: 22px;
-  color: #ffffff;
+  color: #F7F2EC;
   font-weight: 700;
 }
 .work__item__hover ul li {
-  color: #adadad;
+  color: #F7F2EC;
   list-style: none;
   font-size: 16px;
   margin-right: 23px;
@@ -559,7 +559,7 @@ ol {
 
 .play-btn {
   display: inline-block;
-  color: #ffffff;
+  color: #F7F2EC;
   font-size: 20px;
   height: 50px;
   width: 50px;
